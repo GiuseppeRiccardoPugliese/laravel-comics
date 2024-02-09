@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ Vite::asset('/public/favicon.ico') }}">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     @vite("resources/js/app.js")
 
@@ -14,8 +18,9 @@
 </head>
 
 <body>
-    <div class="text-center">
+    <div>
         @include('components.header')
+        @include('components.content')
         @yield('content')
         @include('components.footer')
     </div>
