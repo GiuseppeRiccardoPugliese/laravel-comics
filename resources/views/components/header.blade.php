@@ -1,6 +1,6 @@
 <div class="w-100 bg-primary d-flex justify-content-evenly">
-    <span class="text-white">DC POWER VISA</span>
-    <span class="text-white">ADDITIONAL DC SITES</span>
+    <a class="text-decoration-none text-white" href="#"><span class="text-white">DC POWER VISA</span></a>
+    <a class="text-decoration-none text-white" href="#"><span class="text-white">ADDITIONAL DC SITES</span></a>
 </div>
 
 <header>
@@ -17,6 +17,12 @@
             </li>
             @endforeach
         </ul>
-        <input type="search" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon2">
+
+        <div class="input-group align-items-center">
+            <input type="search" class="form-control" placeholder="Search...🔍" aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+        </div>
     </nav>
 </header>
