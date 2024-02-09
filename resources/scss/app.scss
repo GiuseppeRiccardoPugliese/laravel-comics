@@ -227,3 +227,50 @@ section {
         right: 0;
     }
 }
+
+//////////////////////////////////////////////////
+
+///FOOTER
+footer {
+    height: 119px;
+    width: 100%;
+    background-color: #303030;
+    display: flex;
+
+    .container {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+
+        .left button {
+            background-color: #303030;
+            border: 2px solid #0282f9;
+            padding: 0.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #0282f9;
+                opacity: 0.6;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .right span {
+            color: #0282f9;
+            font-weight: 800;
+            margin-right: 10px;
+        }
+
+        .right a {
+            padding: 0.4rem;
+        }
+    }
+
+}
