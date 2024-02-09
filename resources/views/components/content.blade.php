@@ -4,10 +4,17 @@
     </div>
     <div class="container">
         <div class="btn">
-            <h3>CURRENT SERIES</h3>
+            <h3 class="m-0">CURRENT SERIES</h3>
         </div>
         <div class="cards">
-            <AppThumbs v-for="(thumb, i) in thumbs" :key="i" :details="thumb" />
+            @foreach($comics as $comic)
+            <div class="thumb-card">
+                <a href="#">
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['type']}}">
+                    <h3>{{$comic['title']}}</h3>
+                </a>
+            </div>
+            @endforeach
         </div>
         <div class="btn load_more">
             <a href="#">LOAD MORE</a>
