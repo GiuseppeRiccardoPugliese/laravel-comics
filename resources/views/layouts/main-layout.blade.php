@@ -23,7 +23,7 @@
         @include('components.content')
         @include('components.merch')
         @include('components.info')
-        @yield('content')
+        <!-- @yield('content') -->
         @include('components.footer')
     </div>
 </body>
