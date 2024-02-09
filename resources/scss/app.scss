@@ -21,7 +21,7 @@ img {
 header {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px 0;
 
@@ -135,7 +135,7 @@ main {
 //////////////////////////////////////////////////
 
 ///MERCH SECT W/BLUE BG
-section {
+#merch_sec {
     width: 100%;
     height: 150px;
     background-color: #0282f9;
@@ -148,16 +148,14 @@ section {
 
         ul {
             list-style: none;
+            display: flex;
             justify-content: center;
             align-items: center;
 
-            div {
+            .merch_imgwrapper {
                 display: flex;
                 justify-content: center;
                 margin-right: 10px;
-            }
-
-            img {
                 width: 60px;
                 height: 60px;
             }
