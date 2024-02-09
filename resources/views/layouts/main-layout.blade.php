@@ -21,6 +21,8 @@
     <div>
         @include('components.header')
         @include('components.content')
+        @include('components.merch')
+        @include('components.info')
         @yield('content')
         @include('components.footer')
     </div>
